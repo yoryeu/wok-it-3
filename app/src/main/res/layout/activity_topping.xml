@@ -5,6 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#F44336"
+        android:text="PRECEDENT"
+        app:iconTint="#F44336"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#F44336"
+        android:text="SUIVANT"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="647dp" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="319dp"

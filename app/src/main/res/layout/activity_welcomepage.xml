@@ -9,26 +9,31 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="173dp"
+        android:layout_width="206dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="16dp"
-        android:background="#C7C7C7"
-        android:text="commander"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="102dp"
+        android:backgroundTint="#303030"
+        android:text="MON HISTORIUE"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="206dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#303030"
+        android:text="COMMANDER"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="169dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="32dp"
-        android:background="#C7C7C7"
-        android:text="MON HISTORIQUE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -37,12 +42,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="65dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="108dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
         app:srcCompat="@drawable/profffil" />
 
     <ImageView
@@ -50,13 +52,11 @@
         android:layout_width="378dp"
         android:layout_height="151dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="72dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
         app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,57 +7,82 @@
     android:background="#FEFEFE">
 
     <Button
-        android:id="@+id/menu_enfant"
-        android:layout_width="209dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="136dp"
-        android:background="#4CAF50"
-        android:text="menu enfant"
+        android:id="@+id/button18"
+        android:layout_width="125dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#F44336"
+        android:text="SUIVANT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#F44336"
+        android:text="PRECEDENT"
+        app:iconTint="#F44336"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_etudiant" />
-
-    <Button
-        android:id="@+id/menu_etudiant"
-        android:layout_width="209dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="66dp"
-        android:background="#4CAF50"
-        android:text="menu etudiant"
-        app:layout_constraintBottom_toTopOf="@+id/menu_enfant"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_classique" />
-
-    <Button
-        android:id="@+id/menu_classique"
-        android:layout_width="209dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="52dp"
-        android:background="#4CAF50"
-        android:backgroundTint="#004CAF50"
-        android:text="menu classique"
-        app:layout_constraintBottom_toTopOf="@+id/menu_etudiant"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logowi"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="-14dp" />
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="103dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logowi" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="206dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="102dp"
+        android:backgroundTint="#4CAF50"
+        android:text="MENU CLASSIQUE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="209dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="102dp"
+        android:backgroundTint="#4CAF50"
+        android:text="MENU ENFANT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="205dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="103dp"
+        android:backgroundTint="#4CAF50"
+        android:text="MENU ETUDIANT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
 </androidx.constraintlayout.widget.ConstraintLayout>
