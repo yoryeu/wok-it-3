@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="96dp"
+        android:text="CHOISIS TES LEGUMES  !"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="647dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logowi" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="183dp"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/champi"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="182dp"
+        android:layout_height="167dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/poivrons"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="180dp"
+        android:layout_height="176dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/brocolis"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="179dp"
+        android:layout_height="168dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cajou"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="460dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

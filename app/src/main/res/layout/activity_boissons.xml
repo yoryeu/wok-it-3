@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="96dp"
+        android:text="CHOISIS TA BOISSON !"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="647dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logowi" />
+
+    <ImageButton
+        android:id="@+id/imageButton21"
+        android:layout_width="126dp"
+        android:layout_height="195dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/asahi"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton22"
+        android:layout_width="129dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/coca"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton23"
+        android:layout_width="128dp"
+        android:layout_height="195dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/fanta"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton24"
+        android:layout_width="128dp"
+        android:layout_height="195dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sprite"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="129dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/icetea"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="391dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

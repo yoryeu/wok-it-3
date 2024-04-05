@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textId" type="id" />
+    <item name="textName" type="id" />
+    <item name="textType" type="id" />
+    <item name="textPrice" type="id" />
+</resources>
