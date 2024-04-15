@@ -7,13 +7,15 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import org.libreapps.rest.obj.Product;
+import org.libreapps.rest.obj.MesCommandes;
+
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
@@ -26,36 +28,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ArrayList<Product> listData = getListData();
+        ArrayList<MesCommandes> listData = getListData();
         final ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(new CustomListAdapter(this, listData));
 
         // When the user clicks on the ListItem
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                Object o = listView.getItemAtPosition(position);
-                Product upload = (Product) o;
-                Intent intent = new Intent(MainActivity.this, EditActivity.class);
-                intent.putExtra("id", upload.getId());
-                intent.putExtra("name", upload.getName());
-                intent.putExtra("type", upload.getType());
-                intent.putExtra("price", upload.getPrice());
-                startActivity(intent);
-            }
-        });
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, EditActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
-    public ArrayList<Product> getListData(){
+    public ArrayList<MesCommandes> getListData(){
         try{
             ConnectionRest connectionRest = new ConnectionRest();
             connectionRest.execute("GET");

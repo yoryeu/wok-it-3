@@ -13,12 +13,13 @@
         android:layout_height="57dp"
         android:layout_marginStart="102dp"
         android:layout_marginEnd="103dp"
-        android:layout_marginBottom="102dp"
         android:backgroundTint="#303030"
         android:text="HISTORIQUE"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Commander"
         tools:text="MON HISTORIQUE " />
 
     <Button
@@ -28,13 +29,14 @@
         android:layout_marginStart="102dp"
         android:layout_marginTop="79dp"
         android:layout_marginEnd="103dp"
-        android:layout_marginBottom="32dp"
         android:backgroundTint="#303030"
         android:text="COMMANDER"
         app:layout_constraintBottom_toTopOf="@+id/button_Historique"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="COMMANDER" />
 
     <ImageView

@@ -9,17 +9,19 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import org.libreapps.rest.obj.Product;
+import org.libreapps.rest.obj.MesCommandes;
+
 
 import java.util.ArrayList;
 
 public class CustomListAdapter extends BaseAdapter {
+    private String UsrEmail = GlobalVariable.UsrEmail;
 
-    private ArrayList<Product> listData;
+    private ArrayList<MesCommandes> listData;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public CustomListAdapter(Context aContext, ArrayList<Product> listData) {
+    public CustomListAdapter(Context aContext, ArrayList<MesCommandes> listData) {
         this.context = aContext;
         this.listData = listData;
         layoutInflater = LayoutInflater.from(aContext);
@@ -31,7 +33,6 @@ public class CustomListAdapter extends BaseAdapter {
             convertView = layoutInflater.inflate(R.layout.activity_custom_list_view, null);
             holder = new ViewHolder();
             holder.id = (TextView) convertView.findViewById(R.id.textId);
-            holder.name = (TextView) convertView.findViewById(R.id.textName);
             holder.type = (TextView) convertView.findViewById(R.id.textType);
             holder.price = (TextView) convertView.findViewById(R.id.textPrice);
             convertView.setTag(holder);
@@ -44,19 +45,19 @@ public class CustomListAdapter extends BaseAdapter {
             convertView.setBackgroundColor(Color.rgb(150,245,170));
         }
 
-        Product product = this.listData.get(position);
-        holder.id.setText(""+product.getId());
-        holder.name.setText(product.getName());
-        holder.type.setText(product.getType());
-        holder.price.setText(""+product.getPrice());
-        Log.v("CUSTOM",""+product.getName()+" "+product.getType());
-
+        MesCommandes product = this.listData.get(position);
+        if (UsrEmail.equals(product.getEmail())) {
+            holder.id.setText("" + product.getId());
+            holder.type.setText(product.getType());
+            holder.price.setText("" + product.getPrice());
+            Log.v("CUSTOM", "" + product.getEmail() + " " + product.getType());
+        }
         return convertView;
     }
 
+
     static class ViewHolder {
         TextView id;
-        TextView name;
         TextView type;
         TextView price;
     }

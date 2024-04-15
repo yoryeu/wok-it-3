@@ -15,7 +15,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
-import org.libreapps.rest.obj.Product;
+
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
@@ -35,6 +35,13 @@ public class WelcomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(WelcomePage.this, Commander.class);
+                startActivity(intent);
+            }
+        });
+        buttonHistorique.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomePage.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,5 +1,7 @@
 package org.libreapps.rest;
 
+import static org.libreapps.rest.GlobalVariable.setUsrEmail;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,7 +20,9 @@ import org.libreapps.rest.obj.Param;
 import java.util.Base64;
 import java.util.concurrent.ExecutionException;
 
+
 public class LoginActivity extends AppCompatActivity {
+    private String UsrEmail = GlobalVariable.UsrEmail;
     private EditText userEmail;
     private EditText userPassword;
     private Button buttonLogin;
@@ -49,13 +53,13 @@ public class LoginActivity extends AppCompatActivity {
                     jAuth.put("app", "MNA");
 
                     Log.v("LoginActivity", userEmail.getText().toString()+" "+userPassword.getText().toString());
+                    setUsrEmail(userEmail.getText().toString());
                     ConnectionRest connectionRest = new ConnectionRest();
                     connectionRest.setObj(jAuth);
                     connectionRest.setAction("auth");
                     connectionRest.execute("POST");
                     String token = connectionRest.get();
                     Param.getInstance().setToken(token);
-
                     if(token.charAt(0)=='{') {
                         Log.v("LoginActivity", token);
                     }else{

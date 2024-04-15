@@ -24,6 +24,24 @@
             android:name=".Commander"
             android:exported="false" />
         <activity
+            android:name=".ChoixBase"
+            android:exported="false" />
+        <activity
+            android:name=".ChoixProt"
+            android:exported="false" />
+        <activity
+            android:name=".ChoixLegume"
+            android:exported="false" />
+        <activity
+            android:name=".ChoixSauce"
+            android:exported="false" />
+        <activity
+            android:name=".ChoixTopping"
+            android:exported="false" />
+        <activity
+            android:name=".ChoixBoisson"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

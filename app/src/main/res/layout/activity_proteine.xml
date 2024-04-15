@@ -6,23 +6,16 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button_ProtPrecedent"
         android:layout_width="125dp"
         android:layout_height="40dp"
         android:backgroundTint="#F44336"
         android:text="PRECEDENT"
         app:iconTint="#F44336"
-        tools:layout_editor_absoluteX="248dp"
-        tools:layout_editor_absoluteY="647dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="125dp"
-        android:layout_height="39dp"
-        android:backgroundTint="#F44336"
-        android:text="SUIVANT"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Crevette" />
 
     <TextView
         android:id="@+id/textView"
@@ -54,72 +47,63 @@
         app:srcCompat="@drawable/logowi" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/button_Boeuf"
         android:layout_width="146dp"
         android:layout_height="118dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton12"
+        app:layout_constraintBottom_toTopOf="@+id/button_Tofu"
+        app:layout_constraintEnd_toStartOf="@+id/button_Poulet"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.444"
         app:srcCompat="@drawable/boeuf" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/button_Crevette"
         android:layout_width="155dp"
         android:layout_height="135dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="116dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_ProtPrecedent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/button_Porc"
         app:srcCompat="@drawable/crevette" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/button_Porc"
         android:layout_width="145dp"
         android:layout_height="123dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="33dp"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/button_Crevette"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton12"
-        app:srcCompat="@drawable/porc"
-        tools:layout_editor_absoluteY="345dp" />
+        app:layout_constraintStart_toEndOf="@+id/button_Tofu"
+        app:layout_constraintTop_toBottomOf="@+id/button_Poulet"
+        app:srcCompat="@drawable/porc" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/button_Poulet"
         android:layout_width="147dp"
         android:layout_height="114dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
+        app:layout_constraintBottom_toTopOf="@+id/button_Porc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/button_Boeuf"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.562"
         app:srcCompat="@drawable/poulet" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/button_Tofu"
         android:layout_width="147dp"
         android:layout_height="119dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="12dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintBottom_toTopOf="@+id/button_Crevette"
+        app:layout_constraintEnd_toStartOf="@+id/button_Porc"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Boeuf"
         app:srcCompat="@drawable/tofu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

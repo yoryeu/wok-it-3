@@ -6,8 +6,9 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.libreapps.rest.obj.MesCommandes;
 import org.libreapps.rest.obj.Param;
-import org.libreapps.rest.obj.Product;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,8 +24,8 @@ import java.util.ArrayList;
 public class ConnectionRest extends AsyncTask<String, Void, String> {
     private final static String URL = "https://api.munier.me/jwt/";
     private JSONObject jsonObj = null;
-    private String action = "product";
-
+    private String action = "commandes";
+    private String UsrEmail = GlobalVariable.UsrEmail;
     @Override
     protected String doInBackground(String... strings) {
         try {
@@ -97,12 +98,20 @@ public class ConnectionRest extends AsyncTask<String, Void, String> {
         return response.toString();
     }
 
-    public ArrayList<Product> parse(final String json) {
+    public ArrayList<MesCommandes> parse(final String json) {
         try {
-            final ArrayList<Product> products = new ArrayList<>();
+            final ArrayList<MesCommandes> products = new ArrayList<>();
             final JSONArray jProductArray = new JSONArray(json);
+            Log.d("test",UsrEmail);
             for (int i = 0; i < jProductArray.length(); i++) {
-                products.add(new Product(jProductArray.optJSONObject(i)));
+                MesCommandes commandes = new MesCommandes(jProductArray.optJSONObject(i));
+                Log.d("test",commandes.getEmail());
+
+                if (commandes.getEmail().equals(UsrEmail)){
+                    Log.d("test","yes");
+                    products.add(new MesCommandes(jProductArray.optJSONObject(i)));
+                }
+
             }
             return products;
         } catch (JSONException e) {

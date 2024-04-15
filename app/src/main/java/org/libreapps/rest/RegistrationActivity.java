@@ -1,5 +1,7 @@
 package org.libreapps.rest;
 
+import static org.libreapps.rest.GlobalVariable.setUsrEmail;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,7 +17,7 @@ import org.json.JSONObject;
 import java.util.concurrent.ExecutionException;
 
 public class RegistrationActivity extends AppCompatActivity {
-
+    private String UsrEmail = GlobalVariable.UsrEmail;
     private EditText userName, userPassword, userEmail;
     private Button buttonRegistration;
 
@@ -33,6 +35,7 @@ public class RegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
+                    setUsrEmail(userEmail.getText().toString());
                     ConnectionRest connectionRest = new ConnectionRest();
                     JSONObject jsonAuthentification = new JSONObject();
                     jsonAuthentification.put("name", userName.getText());
