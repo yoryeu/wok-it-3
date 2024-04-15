@@ -1,6 +1,7 @@
 package org.libreapps.rest.obj;
 
 public class Param {
+
     private String token;
     private static Param param;
     private int idUser;

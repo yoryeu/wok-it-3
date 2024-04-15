@@ -1,6 +1,7 @@
 package org.libreapps.rest;
 
 import static org.libreapps.rest.GlobalVariable.setLegume;
+import static org.libreapps.rest.GlobalVariable.setSauce;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -36,12 +37,12 @@ public class ChoixSauce extends AppCompatActivity {
         buttonTokyo = (ImageButton)findViewById(R.id.button_Tokyo);
         buttonSeoul = (ImageButton)findViewById(R.id.button_Seoul);
         buttonHotAsia = (ImageButton)findViewById(R.id.button_HotAsia);
-        buttonSaucePrcédent = (Button)findViewById(R.id.button_LegumePrecedent);
+        buttonSaucePrcédent = (Button)findViewById(R.id.button_SaucePrecedent);
 
         buttonHongKong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setLegume("hongkong");
+                setSauce("hongkong");
                 Intent intent = new Intent(ChoixSauce.this, ChoixTopping.class);
                 startActivity(intent);
             }
@@ -49,7 +50,7 @@ public class ChoixSauce extends AppCompatActivity {
         buttonTokyo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setLegume("tokyo");
+                setSauce("tokyo");
                 Intent intent = new Intent(ChoixSauce.this, ChoixTopping.class);
                 startActivity(intent);
             }
@@ -57,7 +58,7 @@ public class ChoixSauce extends AppCompatActivity {
         buttonSeoul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setLegume("séoul");
+                setSauce("séoul");
                 Intent intent = new Intent(ChoixSauce.this, ChoixTopping.class);
                 startActivity(intent);
             }
@@ -65,7 +66,7 @@ public class ChoixSauce extends AppCompatActivity {
         buttonHotAsia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setLegume("hot asia");
+                setSauce("hot asia");
                 Intent intent = new Intent(ChoixSauce.this, ChoixTopping.class);
                 startActivity(intent);
             }

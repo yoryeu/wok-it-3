@@ -30,14 +30,7 @@ public class EditActivity extends AppCompatActivity {
         Button buttonCancel = (Button) findViewById(R.id.button_cancel);
         Button buttonOk = (Button) findViewById(R.id.button_ok);
 
-        if(id!=0){
-            idTxt.setText(""+id);
-            nameEditTxt.setText(name);
-            typeEditTxt.setText(type);
-            priceEditTxt.setText(""+price);
-            buttonCancel.setText("Supprimer");
-            buttonOk.setText("Modifier");
-        }
+
 
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override

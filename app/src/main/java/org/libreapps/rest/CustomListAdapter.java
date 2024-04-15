@@ -32,7 +32,7 @@ public class CustomListAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = layoutInflater.inflate(R.layout.activity_custom_list_view, null);
             holder = new ViewHolder();
-            holder.id = (TextView) convertView.findViewById(R.id.textId);
+            holder.ID = (TextView) convertView.findViewById(R.id.textId);
             holder.type = (TextView) convertView.findViewById(R.id.textType);
             holder.price = (TextView) convertView.findViewById(R.id.textPrice);
             convertView.setTag(holder);
@@ -47,7 +47,7 @@ public class CustomListAdapter extends BaseAdapter {
 
         MesCommandes product = this.listData.get(position);
         if (UsrEmail.equals(product.getEmail())) {
-            holder.id.setText("" + product.getId());
+            holder.ID.setText("" + product.getId());
             holder.type.setText(product.getType());
             holder.price.setText("" + product.getPrice());
             Log.v("CUSTOM", "" + product.getEmail() + " " + product.getType());
@@ -57,7 +57,7 @@ public class CustomListAdapter extends BaseAdapter {
 
 
     static class ViewHolder {
-        TextView id;
+        TextView ID;
         TextView type;
         TextView price;
     }

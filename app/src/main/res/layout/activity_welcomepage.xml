@@ -8,7 +8,7 @@
     android:background="#3E9048">
 
     <Button
-        android:id="@+id/button_Historique"
+        android:id="@+id/button_Modifier"
         android:layout_width="206dp"
         android:layout_height="57dp"
         android:layout_marginStart="102dp"
@@ -31,7 +31,7 @@
         android:layout_marginEnd="103dp"
         android:backgroundTint="#303030"
         android:text="COMMANDER"
-        app:layout_constraintBottom_toTopOf="@+id/button_Historique"
+        app:layout_constraintBottom_toTopOf="@+id/button_Modifier"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

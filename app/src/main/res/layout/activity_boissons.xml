@@ -6,23 +6,16 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button_BoissonPrecedent"
         android:layout_width="125dp"
         android:layout_height="40dp"
         android:backgroundTint="#F44336"
         android:text="PRECEDENT"
         app:iconTint="#F44336"
-        tools:layout_editor_absoluteX="248dp"
-        tools:layout_editor_absoluteY="647dp" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="125dp"
-        android:layout_height="39dp"
-        android:backgroundTint="#F44336"
-        android:text="SUIVANT"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="647dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_IceTea" />
 
     <TextView
         android:id="@+id/textView"
@@ -53,47 +46,60 @@
         app:srcCompat="@drawable/logowi" />
 
     <ImageButton
-        android:id="@+id/imageButton21"
+        android:id="@+id/button_Asahi"
         android:layout_width="126dp"
         android:layout_height="195dp"
+        android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/asahi"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_IceTea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Fanta"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/asahi" />
 
     <ImageButton
-        android:id="@+id/imageButton22"
+        android:id="@+id/button_Coca"
         android:layout_width="129dp"
         android:layout_height="180dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/coca"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="391dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_BoissonPrecedent"
+        app:layout_constraintEnd_toStartOf="@+id/button_IceTea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Fanta"
+        app:srcCompat="@drawable/coca" />
 
     <ImageButton
-        android:id="@+id/imageButton23"
+        android:id="@+id/button_Fanta"
         android:layout_width="128dp"
         android:layout_height="195dp"
+        android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/fanta"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_Coca"
+        app:layout_constraintEnd_toStartOf="@+id/button_Asahi"
+        app:layout_constraintStart_toEndOf="@+id/button_Sprite"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/fanta" />
 
     <ImageButton
-        android:id="@+id/imageButton24"
+        android:id="@+id/button_Sprite"
         android:layout_width="128dp"
         android:layout_height="195dp"
+        android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/sprite"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_Coca"
+        app:layout_constraintEnd_toStartOf="@+id/button_Fanta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/sprite" />
 
     <ImageButton
-        android:id="@+id/imageButton25"
+        android:id="@+id/button_IceTea"
         android:layout_width="129dp"
         android:layout_height="180dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/icetea"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="391dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button_BoissonPrecedent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_Coca"
+        app:layout_constraintTop_toBottomOf="@+id/button_Fanta"
+        app:srcCompat="@drawable/icetea" />
 </androidx.constraintlayout.widget.ConstraintLayout>

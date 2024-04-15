@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/button_ToppingsPrecedent"
         android:layout_width="125dp"
         android:layout_height="40dp"
         android:backgroundTint="#F44336"
@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton18" />
+        app:layout_constraintTop_toBottomOf="@+id/button_Ananas" />
 
     <TextView
         android:id="@+id/textView"
@@ -46,48 +46,48 @@
         app:srcCompat="@drawable/logowi" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/button_Cacahuettes"
         android:layout_width="169dp"
         android:layout_height="142dp"
         android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
+        app:layout_constraintBottom_toTopOf="@+id/button_Ananas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton19"
+        app:layout_constraintStart_toEndOf="@+id/button_Sesam"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/cacahuete" />
 
     <ImageButton
-        android:id="@+id/imageButton18"
+        android:id="@+id/button_Ananas"
         android:layout_width="170dp"
         android:layout_height="141dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/button_ToppingsPrecedent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton20"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton14"
+        app:layout_constraintStart_toEndOf="@+id/button_FriedOignons"
+        app:layout_constraintTop_toBottomOf="@+id/button_Cacahuettes"
         app:srcCompat="@drawable/ananas" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
+        android:id="@+id/button_Sesam"
         android:layout_width="170dp"
         android:layout_height="142dp"
         android:layout_marginTop="50dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton20"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton14"
+        app:layout_constraintBottom_toTopOf="@+id/button_FriedOignons"
+        app:layout_constraintEnd_toStartOf="@+id/button_Cacahuettes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/sesames" />
 
     <ImageButton
-        android:id="@+id/imageButton20"
+        android:id="@+id/button_FriedOignons"
         android:layout_width="169dp"
         android:layout_height="140dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton14"
+        app:layout_constraintBottom_toTopOf="@+id/button_ToppingsPrecedent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Cacahuettes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton19"
+        app:layout_constraintTop_toBottomOf="@+id/button_Sesam"
         app:srcCompat="@drawable/oignons" />
 </androidx.constraintlayout.widget.ConstraintLayout>
